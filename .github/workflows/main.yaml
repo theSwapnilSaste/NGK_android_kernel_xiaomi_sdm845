@@ -9,7 +9,8 @@ on:
 jobs:
   build:
     name: Compile Beryllium Kernel
-    runs-on: ubuntu-latest
+    permissions: write-all
+    runs-on: ubuntu-22.04
 
     env:
       DEFCONFIG: beryllium_defconfig
